@@ -1,7 +1,5 @@
 "use strict";
 
-// TODO - write your code here.
-
 const randomDamage = () => Math.floor(Math.random() * 10) + 1;
 
 // 0 === false!!!
@@ -39,6 +37,7 @@ const fight = (player1, player2, player1Health, player2Health) => {
     }
   }
 };
+console.log(fight("Desiree", "Mitch", 100, 100));
 
 const getGrade = (grade) => {
   if (grade >= 90) {
@@ -53,7 +52,7 @@ const getGrade = (grade) => {
     return "F";
   }
 };
-console.log(getGrade());
+console.log(getGrade(88));
 
 const prioritize = (urgent, important) => {
   if (urgent === false && important === true) {
@@ -66,7 +65,7 @@ const prioritize = (urgent, important) => {
     return `4.`;
   }
 };
-console.log(prioritize());
+console.log(prioritize(false, false));
 
 const calculatePay = (wage, hours) => {
   if (hours > 40) {
@@ -81,4 +80,4 @@ const calculatePay = (wage, hours) => {
     return `Paid: ${paid}`;
   }
 };
-console.log(calculatePay());
+console.log(calculatePay(10, 40));
